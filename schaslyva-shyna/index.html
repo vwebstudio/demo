@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://images.unsplash.com">
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#17191d;--head:#17191d;--card:#23262c;--ink:#f7f6f3;--mut:#b4b8bf;--ln:#343941;--br:#cf1f28;--y:#ffd21f;--r:8px;--hf:"Golos Text",system-ui,sans-serif;--bf:"Golos Text",system-ui,sans-serif;--focus:#ffd21f;--num:#ffd21f;--numi:#17191d;--field:#17191d;--field-ln:#565c66;--link:#ffd21f}
+:root{--bg:#17191d;--head:#17191d;--card:#23262c;--ink:#f7f6f3;--mut:#b4b8bf;--ln:#343941;--br:#ffd21f;--brt:#17191d;--y:#ffd21f;--r:8px;--hf:"Golos Text",system-ui,sans-serif;--bf:"Golos Text",system-ui,sans-serif;--focus:#ffd21f;--num:#ffd21f;--numi:#17191d;--field:#17191d;--field-ln:#565c66;--link:#ffd21f}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--bf);-webkit-text-size-adjust:100%}
@@ -27,7 +27,7 @@ a{color:inherit}img{display:block;max-width:100%}
 .demo{background:#ffe97a;color:#161616;text-align:center;font:600 12px/1.35 system-ui,sans-serif;padding:9px 14px}
 header{position:sticky;top:0;z-index:20;background:var(--head);border-bottom:1px solid var(--ln)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:var(--r);border:2px solid var(--br);background:var(--br);color:#fff;font:700 16px var(--bf);text-decoration:none;cursor:pointer;text-align:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:var(--r);border:2px solid var(--br);background:var(--br);color:var(--brt,#fff);font:700 16px var(--bf);text-decoration:none;cursor:pointer;text-align:center}
 .btn:hover{filter:brightness(1.08)}
 .btn.small{min-height:44px;padding:8px 14px;font-size:15px}
 .btn svg{width:18px;height:18px;flex:none}
@@ -67,10 +67,10 @@ footer{border-top:1px solid var(--ln);padding:24px 0 48px;color:var(--mut);font-
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(23,25,29,.15) 0%,rgba(23,25,29,.78) 55%,var(--bg) 100%)}
 .hero .wrap{padding:110px 0 30px}
 .hero h1{font-size:clamp(30px,10vw,84px);font-weight:900;text-transform:uppercase;margin-bottom:16px}
-.hero h1 span{display:block;width:max-content;max-width:100%;margin-top:8px;padding:4px 14px 8px;background:var(--br);font-size:clamp(20px,5.6vw,46px)}
+.hero h1 span{display:block;width:max-content;max-width:100%;margin-top:8px;padding:4px 14px 8px;background:var(--br);color:var(--brt);font-size:clamp(20px,5.6vw,46px)}
 .hero p{max-width:46ch;font-size:17px;color:#e3e5e8;margin-bottom:24px}
-.btn.ghost{background:rgba(23,25,29,.55);border-color:rgba(255,255,255,.6)}
-.strip{background:var(--br)}
+.btn.ghost{background:rgba(23,25,29,.55);color:#fff;border-color:rgba(255,255,255,.6)}
+.strip{background:var(--br);color:var(--brt)}
 .strip .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
 .strip .wrap div{padding:16px 10px;text-align:center;font-size:13px;line-height:1.35}
 .strip strong{display:block;font-weight:900;font-size:clamp(20px,5.6vw,30px);margin-bottom:2px}
