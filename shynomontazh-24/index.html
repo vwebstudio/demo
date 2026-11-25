@@ -10,14 +10,14 @@
 <meta property="og:title" content="Шиномонтаж 24 — приклад сайту (демо V Web Studio)">
 <meta property="og:description" content="Демонстраційний приклад, не офіційний сайт.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1704906654369-091b259fc086?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
-<meta name="theme-color" content="#0d211b">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%235ed6a0'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%230d211b'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0b1526">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2374c7ff'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%230b1526'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Onest:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0d211b;--head:#0d211b;--card:#163128;--ink:#f1f7f4;--mut:#a9c2b8;--ln:#27493d;--br:#5ed6a0;--brt:#08221a;--r:14px;--hf:"Unbounded",system-ui,sans-serif;--bf:"Onest",system-ui,sans-serif;--focus:#fff;--num:#5ed6a0;--numi:#08221a;--field:#0d211b;--field-ln:#4d7264;--link:#5ed6a0}
+:root{--bg:#0b1526;--head:#0b1526;--card:#14233d;--ink:#f1f6ff;--mut:#a9bdd6;--ln:#25395a;--br:#74c7ff;--brt:#06182c;--r:14px;--hf:"Unbounded",system-ui,sans-serif;--bf:"Onest",system-ui,sans-serif;--focus:#fff;--num:#74c7ff;--numi:#06182c;--field:#0b1526;--field-ln:#4a6794;--link:#74c7ff}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--bf);-webkit-text-size-adjust:100%}
@@ -75,7 +75,7 @@ footer{border-top:1px solid var(--ln);padding:24px 0 48px;color:var(--mut);font-
 h2{font-size:clamp(25px,6.4vw,38px);font-weight:600}
 .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 .card h3{font-size:18px;font-weight:600}
-.alt{background:#091812}
+.alt{background:#08101e}
 .steps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .book{display:grid;gap:28px}
 .photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
@@ -159,7 +159,9 @@ f.addEventListener('submit',function(e){e.preventDefault();
 var n=f.elements['name'],p=f.elements['phone'];
 if(!n.value.trim()){n.focus();return}
 if(p.value.replace(/\D/g,'').length<9){p.focus();return}
-ok.classList.add('show')})})();
+ok.classList.add('show')});
+document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(){document.querySelector('select[name=service]').value=a.dataset.s})});
+})();
 </script>
 </body>
 </html>

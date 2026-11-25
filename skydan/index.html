@@ -169,7 +169,9 @@ f.addEventListener('submit',function(e){e.preventDefault();
 var n=f.elements['name'],p=f.elements['phone'];
 if(!n.value.trim()){n.focus();return}
 if(p.value.replace(/\D/g,'').length<9){p.focus();return}
-ok.classList.add('show')})})();
+ok.classList.add('show')});
+document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(){document.querySelector('select[name=service]').value=a.dataset.s})});
+})();
 </script>
 </body>
 </html>

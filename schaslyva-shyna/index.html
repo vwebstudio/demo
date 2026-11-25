@@ -10,14 +10,14 @@
 <meta property="og:title" content="Шиномонтаж «Щаслива шина» — приклад сайту (демо V Web Studio)">
 <meta property="og:description" content="Демонстраційний приклад, не офіційний сайт.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1620707044570-c0dc1576bedd?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
-<meta name="theme-color" content="#17191d">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23ffd21f'/%3E%3Cpath d='M9 19q7 7 14 0' fill='none' stroke='%2317191d' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='11' cy='12' r='2.4' fill='%2317191d'/%3E%3Ccircle cx='21' cy='12' r='2.4' fill='%2317191d'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#ffd21f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23ffd21f' stroke='%2317140a' stroke-width='2'/%3E%3Cpath d='M9 19q7 7 14 0' fill='none' stroke='%2317140a' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='11' cy='12' r='2.4' fill='%2317140a'/%3E%3Ccircle cx='21' cy='12' r='2.4' fill='%2317140a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Golos+Text:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#17191d;--head:#17191d;--card:#23262c;--ink:#f7f6f3;--mut:#b4b8bf;--ln:#343941;--br:#ffd21f;--brt:#17191d;--y:#ffd21f;--r:8px;--hf:"Golos Text",system-ui,sans-serif;--bf:"Golos Text",system-ui,sans-serif;--focus:#ffd21f;--num:#ffd21f;--numi:#17191d;--field:#17191d;--field-ln:#565c66;--link:#ffd21f}
+:root{--bg:#ffd21f;--head:#ffd21f;--card:#fff8dc;--ink:#17140a;--mut:#4d421a;--ln:#dcb314;--br:#17140a;--brt:#ffd21f;--r:18px;--hf:"Dela Gothic One",system-ui,sans-serif;--bf:"Golos Text",system-ui,sans-serif;--focus:#17140a;--num:#17140a;--numi:#ffd21f;--field:#fff8dc;--field-ln:#7a6718;--link:#17140a}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--bf);-webkit-text-size-adjust:100%}
@@ -59,83 +59,75 @@ footer{border-top:1px solid var(--ln);padding:24px 0 48px;color:var(--mut);font-
 @media(min-width:860px){.contacts{grid-template-columns:1fr 1.4fr}}
 @media(max-width:430px){.two{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:900;font-size:19px;color:var(--y);text-transform:uppercase;white-space:nowrap}
-.logo i{width:28px;height:28px;border-radius:50%;background:var(--y);flex:none;position:relative}
-.logo i::after{content:"";position:absolute;left:7px;right:7px;top:12px;height:9px;border-bottom:3px solid #17191d;border-radius:0 0 50% 50%}
-.hero{position:relative;isolation:isolate;min-height:min(80svh,660px);display:flex;align-items:flex-end}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:35% 50%;z-index:-2}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(23,25,29,.15) 0%,rgba(23,25,29,.78) 55%,var(--bg) 100%)}
-.hero .wrap{padding:110px 0 30px}
-.hero h1{font-size:clamp(30px,10vw,84px);font-weight:900;text-transform:uppercase;margin-bottom:16px}
-.hero h1 span{display:block;width:max-content;max-width:100%;margin-top:8px;padding:4px 14px 8px;background:var(--br);color:var(--brt);font-size:clamp(20px,5.6vw,46px)}
-.hero p{max-width:46ch;font-size:17px;color:#e3e5e8;margin-bottom:24px}
-.btn.ghost{background:rgba(23,25,29,.55);color:#fff;border-color:rgba(255,255,255,.6)}
-.strip{background:var(--br);color:var(--brt)}
-.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
-.strip .wrap div{padding:16px 10px;text-align:center;font-size:13px;line-height:1.35}
-.strip strong{display:block;font-weight:900;font-size:clamp(20px,5.6vw,30px);margin-bottom:2px}
-.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
-.more{list-style:none;margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
-.more li{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:16px 18px;font-weight:700}
-.alt{background:#101114}
-.steps{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.book{display:grid;gap:28px}
-.photo{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
-@media(min-width:860px){.book{grid-template-columns:1fr 1fr}.photo{aspect-ratio:auto;height:100%;max-height:640px}
- .hero::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(23,25,29,.75) 48%,rgba(23,25,29,.1) 100%)}.hero .wrap{padding-bottom:60px}}
-@media(max-width:430px){.logo{font-size:16px}}
-@media(max-width:359px){.logo{font-size:12px;gap:6px}.btn.small{padding:8px 10px;gap:6px}}
+body{font-size:17px;accent-color:#17140a}::selection{background:#17140a;color:#ffd21f}
+h1,h2{font-weight:400}
+.logo{font:400 clamp(14px,4vw,21px)/1 var(--hf);text-decoration:none;white-space:nowrap}
+header{border-bottom:0}
+.btn{border-radius:99px}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.hero{padding:26px 0 44px;overflow:hidden}
+.hero .wrap{display:grid;gap:22px}
+.tyre{width:150px;height:150px;order:-1}
+.hero h1{font-size:clamp(38px,12vw,96px);line-height:1;text-transform:uppercase;margin-bottom:18px}
+.hero h1 span{display:block;font:700 clamp(20px,5.4vw,32px)/1.25 var(--bf);text-transform:none;margin-top:14px;max-width:22ch}
+.hero p{max-width:44ch;margin-bottom:22px;color:var(--mut)}
+.hero .rate{margin:18px 0 0;color:var(--ink);font-weight:700}
+.shot{width:100%;height:clamp(240px,44vw,520px);object-fit:cover;object-position:40% 40%;display:block}
+@media(prefers-reduced-motion:no-preference){.tyre{animation:roll 1.2s cubic-bezier(.16,1,.3,1) both}@keyframes roll{from{transform:translateX(140px) rotate(220deg)}}}
+@media(min-width:860px){.hero{padding:56px 0 64px}.hero .wrap{grid-template-columns:1fr 360px;align-items:center;gap:40px}.tyre{width:360px;height:360px;order:0}}
+.dark,.alt{--ink:#fff8dc;--mut:#cfc39a;--link:#ffd21f;--br:#ffd21f;--brt:#17140a;--ln:#3d3720;--focus:#ffd21f;background:#17140a;color:var(--ink)}
+h2{font-size:clamp(27px,7vw,50px);margin-bottom:12px}
+.list{list-style:none;margin-top:8px}
+.list a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:16px 0;border-top:2px solid var(--ln);text-decoration:none;font:400 clamp(19px,5vw,34px)/1.2 var(--hf)}
+.list li:last-child a{border-bottom:2px solid var(--ln)}
+.list svg{width:30px;height:30px;flex:none;color:#ffd21f;transition:transform .25s cubic-bezier(.16,1,.3,1)}
+.list a:hover{color:#ffd21f}.list a:hover svg{transform:translateX(8px)}
+.book{display:grid;gap:30px}
+.photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:28px}
+.book form{background:#17140a;--ink:#fff8dc;--mut:#cfc39a;--br:#ffd21f;--brt:#17140a;--field:#2a2512;--field-ln:#8a7a34;--focus:#ffd21f;color:var(--ink);border-radius:28px;padding:24px 18px}
+iframe{border-radius:24px}
+@media(min-width:860px){.book{grid-template-columns:1fr 1fr}.photo{aspect-ratio:auto;height:100%;max-height:700px}.book form{padding:36px}}
+@media(max-width:359px){.logo{font-size:12px}.btn.small{padding:8px 10px;gap:6px}}
 </style>
 </head>
 <body>
 <div class="demo" role="note">Демо-версія від V Web Studio — не офіційний сайт · фото для прикладу</div>
 <header><div class="wrap">
- <a class="logo" href="#top"><i aria-hidden="true"></i><span>Щаслива шина</span></a>
+ <a class="logo" href="#top">Щаслива шина</a>
  <a class="btn small" href="tel:+380664668661"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Подзвонити</a>
 </div></header>
 <main id="top">
-<div class="hero">
- <img src="https://images.unsplash.com/photo-1620707044570-c0dc1576bedd?auto=format&amp;fit=crop&amp;w=1100&amp;q=65" alt="Майстер працює з колесом авто (фото для прикладу)" fetchpriority="high">
- <div class="wrap">
-  <h1>Шиномонтаж <span>Київська, 227/1</span></h1>
-  <p>Бровари, щодня з 8:00 до 20:00. Залиште заявку з радіусом коліс, навіть коли додзвонитися не виходить.</p>
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Щаслива шина <span>Шиномонтаж на&nbsp;Київській, 227/1</span></h1>
+  <p>Бровари, щодня з 8:00 до 20:00. Залиште заявку, навіть коли додзвонитися не виходить.</p>
   <div class="cta">
-   <a class="btn" href="#book">Записатися на шиномонтаж</a>
+   <a class="btn" href="#book">Записатися</a>
    <a class="btn ghost" href="tel:+380664668661">066 466 8661</a>
   </div>
+  <p class="rate">★ 5,0 у Google, 741 відгук</p>
  </div>
-</div>
-<div class="strip"><div class="wrap">
- <div><strong>★ 5,0</strong>741 відгук у Google</div>
- <div><strong>8–20</strong>без вихідних</div>
- <div><strong>227/1</strong>вул. Київська</div>
+ <svg class="tyre" viewBox="0 0 200 200" aria-hidden="true">
+ <circle cx="100" cy="100" r="98" fill="#17140a"/>
+ <circle cx="100" cy="100" r="87" fill="none" stroke="#4a4430" stroke-width="13" stroke-dasharray="11 11.77"/>
+ <circle cx="100" cy="100" r="66" fill="#ffd21f" stroke="#fff8dc" stroke-width="7"/>
+ <ellipse cx="78" cy="82" rx="8" ry="12" fill="#17140a"/><ellipse cx="122" cy="82" rx="8" ry="12" fill="#17140a"/>
+ <path d="M65 115q35 36 70 0" fill="none" stroke="#17140a" stroke-width="10" stroke-linecap="round"/>
+</svg>
 </div></div>
-<section id="services"><div class="wrap">
+<img class="shot" src="https://images.unsplash.com/photo-1620707044570-c0dc1576bedd?auto=format&amp;fit=crop&amp;w=1600&amp;q=65" alt="Майстер працює з колесом авто (фото для прикладу)" fetchpriority="high">
+<section class="dark" id="services"><div class="wrap">
  <h2>Повний спектр послуг</h2>
- <p class="lead">Перелік узятий з вашої вивіски. Описи й ціни уточнимо з вами.</p>
- <div class="grid">
-  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1593699199342-59b40e08f0ac?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Гайковерт на колісному диску (фото для прикладу)"><div><h3>Шиномонтаж</h3><p>Зняття, монтаж і встановлення коліс.</p></div></article>
-  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1477823986828-5aff156284aa?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Складені шини (фото для прикладу)"><div><h3>Сезонне зберігання шин</h3><p>Комплект чекає на наступний сезон.</p></div></article>
-  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1611633235555-45e252fe48c8?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Колісні диски на полицях (фото для прикладу)"><div><h3>Фарбування дисків</h3><p>Щоб диски знову мали охайний вигляд.</p></div></article>
- </div>
- <ul class="more"><li>Аргонне зварювання</li><li>Ремонт бічних порізів</li><li>Відкручування секреток</li><li>Продаж нових шин на замовлення</li></ul>
-</div></section>
-<section class="alt"><div class="wrap">
- <h2>Як записатися</h2>
- <p class="lead">Три кроки без очікування на лінії.</p>
- <ol class="steps">
-  <li><div><b>Залиште заявку</b><span>Ім’я, телефон і що треба зробити.</span></div></li>
-  <li><div><b>Отримайте дзвінок</b><span>Майстер передзвонить і підтвердить час.</span></div></li>
-  <li><div><b>Приїжджайте</b><span>Київська, 227/1.</span></div></li>
- </ol>
+ <p class="lead">Перелік узятий з вашої вивіски. Торкніться послуги, щоб записатися.</p>
+ <ul class="list"><li><a href="#book" data-s="Шиномонтаж">Шиномонтаж<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#book" data-s="Сезонне зберігання шин">Сезонне зберігання шин<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#book" data-s="Фарбування дисків">Фарбування дисків<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#book" data-s="Аргонне зварювання">Аргонне зварювання<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#book" data-s="Ремонт бічних порізів">Ремонт бічних порізів<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#book" data-s="Відкручування секреток">Відкручування секреток<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><a href="#book" data-s="Нові шини на замовлення">Нові шини на замовлення<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li></ul>
 </div></section>
 <section id="book"><div class="wrap book">
  <img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1764015805414-df7de89d405b?auto=format&amp;fit=crop&amp;w=900&amp;q=65" alt="Майстер відкручує колесо гайковертом (фото для прикладу)">
  <form novalidate>
-  <div><h2>Запис онлайн</h2><p class="lead" style="margin:0">Досить імені й телефону.</p></div>
+  <div><h2>Запис онлайн</h2><p class="lead" style="margin:0">Залиште ім’я й телефон. Майстер передзвонить і підтвердить час.</p></div>
   <label>Ім’я<input name="name" autocomplete="name" required></label>
    <label>Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
-   <label>Що потрібно<select name="service"><option>Шиномонтаж</option><option>Сезонне зберігання шин</option><option>Фарбування дисків</option><option>Аргонне зварювання</option><option>Ремонт бічного порізу</option><option>Відкрутити секретку</option><option>Нові шини на замовлення</option></select></label>
+   <label>Що потрібно<select name="service"><option>Шиномонтаж</option><option>Сезонне зберігання шин</option><option>Фарбування дисків</option><option>Аргонне зварювання</option><option>Ремонт бічних порізів</option><option>Відкручування секреток</option><option>Нові шини на замовлення</option></select></label>
    <div class="two">
     <label>Радіус коліс<select name="radius"><option>Не знаю</option><option>R13</option><option>R14</option><option>R15</option><option>R16</option><option>R17</option><option>R18</option><option>R19</option><option>R20+</option></select></label>
     <label>Коли приїдете<select name="when"><option>Якнайшвидше</option><option>Сьогодні</option><option>Завтра</option><option>Інший день</option></select></label>
@@ -164,7 +156,9 @@ f.addEventListener('submit',function(e){e.preventDefault();
 var n=f.elements['name'],p=f.elements['phone'];
 if(!n.value.trim()){n.focus();return}
 if(p.value.replace(/\D/g,'').length<9){p.focus();return}
-ok.classList.add('show')})})();
+ok.classList.add('show')});
+document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(){document.querySelector('select[name=service]').value=a.dataset.s})});
+})();
 </script>
 </body>
 </html>
