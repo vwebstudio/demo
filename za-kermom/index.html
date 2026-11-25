@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Магазин-шиномонтаж «За Кермом» — Демо-версія від V Web Studio</title>
+<meta name="description" content="Демонстраційний приклад сайту для магазину-шиномонтажу «За Кермом» в Одесі. Не офіційний сайт.">
+<meta name="robots" content="noindex,nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="«За Кермом» — приклад сайту (демо V Web Studio)">
+<meta property="og:description" content="Демонстраційний приклад, не офіційний сайт.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=1200&h=630&q=70">
+<meta name="theme-color" content="#101214">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23101214' stroke='%23ffc928' stroke-width='4'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23ffc928'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101214;--bg2:#171a1e;--card:#1e2227;--ink:#f6f6f4;--mut:#a7adb5;--ln:#2d3239;--y:#ffc928;--yi:#121212}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 Manrope,system-ui,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:Oswald,Manrope,sans-serif;line-height:1.08;text-wrap:balance}
+h1,h2{text-transform:uppercase}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.demo{background:#ffe97a;color:#161616;text-align:center;font:600 12px/1.35 system-ui,sans-serif;padding:9px 14px}
+header{position:sticky;top:0;z-index:20;background:rgba(16,18,20,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 21px Oswald,sans-serif;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap}
+.logo i{width:28px;height:28px;border-radius:50%;border:6px solid var(--y);flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:10px;border:2px solid var(--y);background:var(--y);color:var(--yi);font:800 16px Manrope,sans-serif;text-decoration:none;cursor:pointer;text-align:center}
+.btn:hover{filter:brightness(1.07)}
+.btn.ghost{background:rgba(16,18,20,.45);color:var(--ink);border-color:rgba(255,255,255,.55)}
+.btn.small{min-height:44px;padding:8px 16px;font-size:15px}
+.btn svg{width:18px;height:18px;flex:none}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hero{position:relative;isolation:isolate;min-height:min(82svh,680px);display:flex;align-items:flex-end}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 50%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(16,18,20,.25) 0%,rgba(16,18,20,.72) 52%,var(--bg) 100%)}
+.hero .wrap{padding:96px 0 28px}
+.open{display:inline-flex;align-items:center;gap:8px;background:rgba(16,18,20,.7);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:6px 14px;font-weight:600;font-size:14px;margin-bottom:16px}
+.open b{width:9px;height:9px;border-radius:50%;background:#3ddc84}
+.hero h1{font-size:clamp(32px,10vw,76px);max-width:13ch;margin-bottom:14px}
+.hero h1 span{color:var(--y)}
+.hero p{max-width:44ch;font-size:17px;color:#d9dce0;margin-bottom:24px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.cta .btn{flex:1 1 230px;max-width:340px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);border-block:1px solid var(--ln);background:var(--bg2)}
+.strip div{padding:16px 12px;text-align:center;font-size:13px;color:var(--mut);border-left:1px solid var(--ln)}
+.strip div:first-child{border-left:0}
+.strip strong{display:block;font:700 clamp(19px,5.4vw,28px)/1.15 Oswald,sans-serif;color:var(--ink);margin-bottom:2px}
+section{padding:56px 0}
+h2{font-size:clamp(30px,7.5vw,44px);margin-bottom:8px}
+.lead{color:var(--mut);margin-bottom:26px;max-width:56ch}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;overflow:hidden}
+.card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+@media(max-width:859px){.book .photo{aspect-ratio:4/3;height:auto;min-height:0}}
+.card div{padding:16px 18px 18px}
+.card h3{font-size:23px;font-weight:500;margin-bottom:4px}
+.card p{color:var(--mut);font-size:15px}
+.alt{background:var(--bg2)}
+.steps{list-style:none;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:18px}
+.steps li::before{content:counter(s);flex:none;width:40px;height:40px;border-radius:50%;background:var(--y);color:var(--yi);display:grid;place-items:center;font:700 19px Oswald,sans-serif}
+.steps b{display:block;margin-bottom:2px}
+.steps span{color:var(--mut);font-size:15px}
+.book{display:grid;gap:28px}
+.photo{border-radius:14px;width:100%;height:100%;object-fit:cover;min-height:220px;max-height:560px}
+form{display:grid;gap:14px;align-content:start}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select{width:100%;min-height:52px;padding:12px 14px;border-radius:10px;border:1px solid #4a515b;background:var(--bg);color:var(--ink);font:400 16px Manrope,sans-serif}
+.two{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.ok{display:none;border:2px solid var(--y);border-radius:10px;padding:14px;font-weight:600}
+.ok.show{display:block}
+.contacts{display:grid;gap:22px}
+dl{display:grid;gap:18px;align-content:start}
+dt{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+dd{font-size:19px;font-weight:600}
+dd a{display:inline-block;padding:6px 0;color:var(--y);text-decoration:none;font:700 30px Oswald,sans-serif}
+iframe{width:100%;height:340px;border:0;border-radius:14px;background:var(--card)}
+footer{border-top:1px solid var(--ln);padding:24px 0 96px;color:var(--mut);font-size:13px}
+@media(min-width:860px){
+ .book{grid-template-columns:1fr 1fr}
+ .contacts{grid-template-columns:1fr 1.4fr}
+ .hero .wrap{padding-bottom:56px}
+ .hero::after{background:linear-gradient(90deg,var(--bg) 0%,rgba(16,18,20,.72) 45%,rgba(16,18,20,.15) 100%)}
+}
+@media(max-width:430px){.logo{font-size:18px}.two{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="demo" role="note">Демо-версія від V Web Studio — не офіційний сайт · фото для прикладу</div>
+<header><div class="wrap">
+ <a class="logo" href="#top"><i aria-hidden="true"></i>За Кермом</a>
+ <a class="btn small" href="tel:+380982894929"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.600 21 3 13.400 3 4c0-.6.4-1 1-1h3.500c.6 0 1 .4 1 1 0 1.300.2 2.500.6 3.600.1.3 0 .7-.2 1z"/></svg>Подзвонити</a>
+</div></header>
+
+<main id="top">
+<div class="hero">
+ <img src="https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=1000&q=70"
+  srcset="https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=800&q=65 800w, https://images.unsplash.com/photo-1645445522156-9ac06bc7a767?auto=format&fit=crop&w=1600&q=70 1600w"
+  sizes="100vw" alt="Майстер встановлює колесо на авто (фото для прикладу)" fetchpriority="high">
+ <div class="wrap">
+  <div class="open"><b aria-hidden="true"></b>Працюємо цілодобово</div>
+  <h1>Шиномонтаж і шини на <span>Київському шосе</span></h1>
+  <p>Залиште заявку за пів хвилини: не треба додзвонюватися, коли всі лінії зайняті.</p>
+  <div class="cta">
+   <a class="btn" href="#book">Записатися на шиномонтаж</a>
+   <a class="btn ghost" href="tel:+380982894929">098 289 4929</a>
+  </div>
+ </div>
+</div>
+
+<div class="strip">
+ <div><strong>★ 4,4</strong>179 відгуків у Google</div>
+ <div><strong>24/7</strong>без вихідних</div>
+ <div><strong>1/5</strong>Київське шосе, Одеса</div>
+</div>
+
+<section id="services"><div class="wrap">
+ <h2>Що робимо</h2>
+ <p class="lead">Це приклад оформлення: ваш перелік послуг і ціни підставимо замість нього.</p>
+ <div class="grid">
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1599082267768-4815b2ea6bd2?auto=format&fit=crop&w=700&h=440&q=65" alt="Шиномонтажний верстат (фото для прикладу)"><div><h3>Шиномонтаж</h3><p>Зняття, монтаж і встановлення коліс.</p></div></article>
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?auto=format&fit=crop&w=700&h=440&q=65" alt="Знімання колеса гайковертом (фото для прикладу)"><div><h3>Сезонна заміна</h3><p>Перехід на зимову чи літню гуму.</p></div></article>
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1760836395760-9831facb4754?auto=format&fit=crop&w=700&h=440&q=65" alt="Шини та литий диск (фото для прикладу)"><div><h3>Шини та диски</h3><p>Підбір під розмір вашого авто.</p></div></article>
+ </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+ <h2>Як записатися</h2>
+ <p class="lead">Три кроки без очікування на лінії.</p>
+ <ol class="steps">
+  <li><div><b>Залиште заявку</b><span>Ім’я, телефон і радіус коліс.</span></div></li>
+  <li><div><b>Отримайте дзвінок</b><span>Майстер передзвонить і підтвердить час.</span></div></li>
+  <li><div><b>Приїжджайте</b><span>Київське шосе, 1/5.</span></div></li>
+ </ol>
+</div></section>
+
+<section id="book"><div class="wrap book">
+ <img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1764699186616-8f707281e4f3?auto=format&fit=crop&w=900&q=65" alt="Шини біля майстерні (фото для прикладу)">
+ <form novalidate>
+  <div><h2>Запис онлайн</h2><p class="lead" style="margin:0">Заповніть три поля, решта за бажанням.</p></div>
+  <label>Ім’я<input name="name" autocomplete="name" required></label>
+  <label>Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
+  <div class="two">
+   <label>Радіус коліс<select name="radius"><option>Не знаю</option><option>R13</option><option>R14</option><option>R15</option><option>R16</option><option>R17</option><option>R18</option><option>R19</option><option>R20+</option></select></label>
+   <label>Коли приїдете<select name="when"><option>Якнайшвидше</option><option>Сьогодні</option><option>Завтра</option><option>Інший день</option></select></label>
+  </div>
+  <button class="btn" type="submit">Передзвоніть мені</button>
+  <div class="ok" role="status">Дякуємо! Це демо, тому заявка нікуди не надсилається.</div>
+ </form>
+</div></section>
+
+<section class="alt" id="contacts"><div class="wrap">
+ <h2 style="margin-bottom:24px">Як нас знайти</h2>
+ <div class="contacts">
+  <dl>
+   <div><dt>Телефон</dt><dd><a href="tel:+380982894929">098 289 4929</a></dd></div>
+   <div><dt>Адреса</dt><dd>Київське шосе, 1/5, Одеса</dd></div>
+   <div><dt>Години роботи</dt><dd>Щодня, цілодобово</dd></div>
+   <div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D1%88%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%20%C2%AB%D0%97%D0%B0%20%D0%9A%D0%B5%D1%80%D0%BC%D0%BE%D0%BC%C2%BB%2C%20%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B5%20%D1%88%D0%BE%D1%81%D0%B5%201%2F5%2C%20%D0%9E%D0%B4%D0%B5%D1%81%D0%B0">Прокласти маршрут</a></div>
+  </dl>
+  <iframe title="Карта: Київське шосе, 1/5, Одеса" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D1%88%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%20%C2%AB%D0%97%D0%B0%20%D0%9A%D0%B5%D1%80%D0%BC%D0%BE%D0%BC%C2%BB%2C%20%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B5%20%D1%88%D0%BE%D1%81%D0%B5%201%2F5%2C%20%D0%9E%D0%B4%D0%B5%D1%81%D0%B0&output=embed"></iframe>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Демонстраційний приклад сайту від V Web Studio, не офіційний сайт компанії. Назва, телефон, адреса, години, оцінка та кількість відгуків взяті з профілю в Google Картах. Фото з Unsplash, для прикладу.</div></footer>
+
+<script>
+(function(){var f=document.querySelector('form'),ok=f.querySelector('.ok');
+f.addEventListener('submit',function(e){e.preventDefault();
+var n=f.elements['name'],p=f.elements['phone'];
+if(!n.value.trim()){n.focus();return}
+if(p.value.replace(/\D/g,'').length<9){p.focus();return}
+ok.classList.add('show')})})();
+</script>
+</body>
+</html>
