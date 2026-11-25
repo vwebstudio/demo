@@ -1,135 +1,170 @@
 <!doctype html>
-<html lang="uk" data-lang="uk" class="t-shynnyi">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Шинний центр — Демо-версія від V Web Studio</title>
-<meta name="description" content="Демонстраційний приклад сайту для «Шинний центр» (Черкаси): запис онлайн і «Передзвоніть мені». Демо-версія, не офіційний сайт.">
+<meta name="description" content="Демонстраційний приклад сайту: Шинний центр, Черкаси. Не офіційний сайт.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:title" content="Шинний центр — Демо-версія від V Web Studio — не офіційний сайт"><meta property="og:description" content="Демонстраційний приклад сайту для «Шинний центр» (Черкаси): запис онлайн і «Передзвоніть мені». Демо-версія, не офіційний сайт."><meta property="og:type" content="website">
-<meta name="theme-color" content="#ffe14d">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111'/%3E%3Cpath d='M7 8l9 17 9-17' fill='none' stroke='%23b6ff3b' stroke-width='4'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Шинний центр — приклад сайту (демо V Web Studio)">
+<meta property="og:description" content="Демонстраційний приклад, не офіційний сайт.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1675034743372-672c3c3f8377?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b81d27'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23fff' stroke-width='5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@700;800;900&family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-.t-autolab{--bg:#14161a;--bg2:#1a1d22;--card:#21252b;--ink:#f2f3f5;--mut:#9aa3ad;--br:#ffb400;--bi:#14161a;--ac:#2c3139;--ln:#2c3139;--r:6px;--hf:'Oswald',sans-serif;--bf:'Manrope',sans-serif;--up:uppercase}
-.t-econom{--bg:#f5f8fc;--bg2:#fff;--card:#fff;--ink:#14233a;--mut:#5b6b82;--br:#1f5fbf;--bi:#fff;--ac:#c75f00;--ln:#dbe3ef;--r:8px;--hf:'Rubik',sans-serif;--bf:'Rubik',sans-serif;--up:none}
-.t-marylomi{--bg:#f6f0e6;--bg2:#efe6d6;--card:#fbf7ef;--ink:#3a3128;--mut:#6f6354;--br:#a9573a;--bi:#fff;--ac:#7f9a7c;--ln:#e0d4bf;--r:22px;--hf:'Lora',serif;--bf:'Nunito',sans-serif;--up:none}
-.t-taina{--bg:#fff7f8;--bg2:#fdebef;--card:#fff;--ink:#3b2a30;--mut:#7d626b;--br:#d6336c;--bi:#fff;--ac:#3b2a30;--ln:#f3d3dc;--r:14px;--hf:'Playfair Display',serif;--bf:'Montserrat',sans-serif;--up:none}
-.t-barber{--bg:#0f0f0f;--bg2:#171614;--card:#1d1b18;--ink:#f1e9d8;--mut:#a89e8a;--br:#c9a24b;--bi:#111;--ac:#3a342a;--ln:#322e26;--r:2px;--hf:'Oswald',sans-serif;--bf:'PT Serif',serif;--up:uppercase}
-.t-ambiance{--bg:#faf8fe;--bg2:#f1ecfa;--card:#fff;--ink:#2f2a3d;--mut:#6e6785;--br:#7a5fc8;--bi:#fff;--ac:#e98f7f;--ln:#e3dbf3;--r:26px;--hf:'Comfortaa',sans-serif;--bf:'Nunito',sans-serif;--up:none}
-.t-schaslyva{--bg:#fbfbf4;--bg2:#eef5e0;--card:#fff;--ink:#1b2a1b;--mut:#566656;--br:#1a7a38;--bi:#fff;--ac:#f6c614;--ln:#d9e6c3;--r:16px;--hf:'Rubik',sans-serif;--bf:'Rubik',sans-serif;--up:none}
-.t-shynnyi{--bg:#0e1a2b;--bg2:#12233a;--card:#172d49;--ink:#eef3fa;--mut:#9db0c9;--br:#d62839;--bi:#fff;--ac:#2c4a73;--ln:#223b5c;--r:6px;--hf:'Montserrat',sans-serif;--bf:'Montserrat',sans-serif;--up:none}
-.t-skydan{--bg:#f3f3f1;--bg2:#e8e8e4;--card:#fff;--ink:#222;--mut:#5f5f58;--br:#f26b1d;--bi:#1b1b1b;--ac:#2b2f36;--ln:#d6d6d0;--r:4px;--hf:'Roboto Slab',serif;--bf:'Roboto',sans-serif;--up:none}
-.t-shyn24{--bg:#0a0f1e;--bg2:#0f1730;--card:#141e3d;--ink:#eaf1ff;--mut:#8fa0c6;--br:#19c3ff;--bi:#04101c;--ac:#7c5cff;--ln:#1f2c55;--r:14px;--hf:'Exo 2',sans-serif;--bf:'Exo 2',sans-serif;--up:none}
-.t-zakermom{--bg:#0c2f3d;--bg2:#0f3a4b;--card:#134556;--ink:#f5f1e6;--mut:#a8c3cb;--br:#f2c14e;--bi:#1b1b1b;--ac:#2a6a80;--ln:#1d5568;--r:10px;--hf:'Russo One',sans-serif;--bf:'Manrope',sans-serif;--up:none}
-
-*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--bf);padding-bottom:76px;-webkit-text-size-adjust:100%}
-h1,h2,h3{font-family:var(--hf);text-transform:var(--up);line-height:1.15;letter-spacing:.01em}
-a{color:inherit}img,svg{max-width:100%}
-.demo{position:sticky;top:0;z-index:50;background:#ffe14d;color:#1a1a1a;font:700 13px/1.3 system-ui,sans-serif;text-align:center;padding:8px 12px;border-bottom:2px solid #1a1a1a}
-.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
-header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
-.logo{display:inline-block;padding:10px 0;font:600 clamp(17px,4.6vw,22px)/1.1 var(--hf);text-transform:var(--up);text-decoration:none}
-.lang{display:flex;gap:4px}.lang button{font:600 13px var(--bf);padding:7px 11px;border-radius:99px;border:1px solid var(--ln);background:transparent;color:var(--ink);cursor:pointer;min-height:44px;min-width:44px}
-.lang button[aria-pressed=true]{background:var(--br);color:var(--bi);border-color:var(--br)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:12px 22px;border-radius:var(--r);border:2px solid var(--br);background:var(--br);color:var(--bi);font:700 16px var(--bf);text-decoration:none;cursor:pointer;text-align:center}
-.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btn.sec{background:var(--ac);border-color:var(--ac);color:#fff}
-.t-barber .btn.alt,.t-autolab .btn.alt{border-color:var(--br);color:var(--br)}
-.hero{padding:30px 0 40px;position:relative;overflow:hidden}
-.eyebrow{font:700 13px var(--bf);letter-spacing:.12em;text-transform:uppercase;color:var(--br);margin-bottom:10px}
-.hero h1{font-size:clamp(30px,8.2vw,56px);max-width:15ch;margin-bottom:14px}
-.hero p.sub{font-size:clamp(16px,4.2vw,19px);color:var(--mut);max-width:46ch;margin-bottom:22px}
-.cta{display:flex;flex-wrap:wrap;gap:10px}.cta .btn{flex:1 1 200px}
-.badge{display:inline-block;margin-bottom:14px;padding:6px 12px;border:1px dashed var(--br);border-radius:99px;font:600 13px var(--bf);color:var(--br)}
-.deco{position:absolute;right:-30px;top:20px;width:min(300px,56vw);fill:none;stroke:var(--br);stroke-width:2;opacity:.16;pointer-events:none}
-.facts{display:grid;gap:10px;margin-top:26px}
-.fact{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:12px 14px;font-size:15px}
-.fact b{display:block;font:700 12px var(--bf);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:2px}
-.stars{color:var(--br);font-weight:700}
-.hero.center{text-align:center}.hero.center h1,.hero.center p.sub{margin-inline:auto}.hero.center .cta{justify-content:center}.hero.center .deco{left:50%;right:auto;transform:translateX(-50%);top:-10px;opacity:.1}
-.hero.hbar .wrap{border-left:6px solid var(--br);padding-left:18px}
-@media(min-width:820px){.hero.split .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center}.facts{margin-top:0}.hero{padding:60px 0 70px}.deco{right:4%}.hero.split .deco{display:none}}
-@media(min-width:820px){.facts.f3{grid-template-columns:repeat(3,1fr)}}
-section{padding:44px 0}section.alt{background:var(--bg2)}
-h2{font-size:clamp(25px,6.4vw,36px);margin-bottom:8px}
-.note{font-size:13px;color:var(--mut);margin-bottom:20px}
-.ph{display:inline-block;font:700 11px var(--bf);letter-spacing:.08em;padding:2px 7px;border:1px dashed var(--mut);border-radius:99px;color:var(--mut);vertical-align:middle}
-.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.card{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:18px}
-.card h3{font-size:19px;margin-bottom:4px}.card p{color:var(--mut);font-size:15px;margin-bottom:10px}.price{font-weight:700;color:var(--mut)}
-.rows{border:1px solid var(--ln);border-radius:var(--r);overflow:hidden;background:var(--card)}
-.row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 16px;border-top:1px solid var(--ln)}.row:first-child{border-top:0}
-.row h3{font-size:17px}.row p{color:var(--mut);font-size:14px}.row .price{white-space:nowrap}
-.photos{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-.photo{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:10px;border:2px dashed var(--ln);border-radius:var(--r);color:var(--mut);font-size:13px;background:var(--card)}
-@media(min-width:720px){.photos{grid-template-columns:repeat(4,1fr)}}
-.tabs{display:flex;gap:8px;margin:16px 0}.tabs button{flex:1;min-height:48px;border-radius:var(--r);border:2px solid var(--br);background:transparent;color:var(--ink);font:700 15px var(--bf);cursor:pointer}
-.tabs button[aria-pressed=true]{background:var(--br);color:var(--bi)}
-form{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);padding:18px;display:grid;gap:12px;max-width:620px}
-label{display:grid;gap:5px;font:600 14px var(--bf)}
-input,select,textarea{font:400 16px var(--bf);padding:12px;min-height:48px;border-radius:var(--r);border:1px solid var(--mut);background:var(--bg);color:var(--ink);width:100%}
-input:focus,select:focus,textarea:focus,.btn:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--br);outline-offset:2px}
-.two{display:grid;gap:12px;grid-template-columns:1fr 1fr}
-.cb-only,.bk-only{display:grid;gap:12px}form[data-mode=cb] .bk-only{display:none}
-.ok{display:none;padding:14px;border-radius:var(--r);background:var(--br);color:var(--bi);font-weight:600}.ok.show{display:block}
-.cont{display:grid;gap:18px}@media(min-width:820px){.cont{grid-template-columns:1fr 1.2fr}}
-.cont dl{display:grid;gap:14px}.cont dt{font:700 12px var(--bf);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}.cont dd{font-size:17px}
-.cont dd a{font-weight:700;display:inline-block;padding:10px 0;min-height:44px}
-iframe{width:100%;height:320px;border:0;border-radius:var(--r);background:var(--card)}
-footer{padding:26px 0 34px;font-size:13px;color:var(--mut);border-top:1px solid var(--ln)}
-.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:10px 12px;background:var(--bg);border-top:1px solid var(--ln)}.bar .btn{flex:1;min-height:52px;padding:8px}
-@media(min-width:820px){.bar{display:none}body{padding-bottom:0}}
-html[data-lang=uk] .lm{display:none}html:not([data-lang=uk]) .lu{display:none}
-</style></head>
+:root{--bg:#f7f7f5;--head:#fff;--card:#fff;--ink:#17181a;--mut:#53575e;--ln:#dcdcd7;--br:#b81d27;--r:4px;--hf:"Sofia Sans Condensed",system-ui,sans-serif;--bf:"Sofia Sans",system-ui,sans-serif;--focus:#17181a;--num:#b81d27;--numi:#fff;--field:#fff;--field-ln:#8b8f96;--link:#b81d27}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--bf);-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:var(--hf);line-height:1.08;text-wrap:balance}
+a{color:inherit}img{display:block;max-width:100%}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.demo{background:#ffe97a;color:#161616;text-align:center;font:600 12px/1.35 system-ui,sans-serif;padding:9px 14px}
+header{position:sticky;top:0;z-index:20;background:var(--head);border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:var(--r);border:2px solid var(--br);background:var(--br);color:#fff;font:700 16px var(--bf);text-decoration:none;cursor:pointer;text-align:center}
+.btn:hover{filter:brightness(1.08)}
+.btn.small{min-height:44px;padding:8px 14px;font-size:15px}
+.btn svg{width:18px;height:18px;flex:none}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}.cta .btn{flex:1 1 230px;max-width:340px}
+section{padding:56px 0}
+h2{font-size:clamp(30px,7.5vw,44px);margin-bottom:8px}
+.lead{color:var(--mut);margin-bottom:26px;max-width:58ch}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:var(--r);overflow:hidden}
+.card img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.card div{padding:16px 18px 18px}
+.card h3{font-size:22px;margin-bottom:4px}.card p{color:var(--mut);font-size:15px}
+.steps{list-style:none;display:grid;gap:12px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start}
+.steps li::before{content:counter(s);flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:800 18px var(--hf);background:var(--num);color:var(--numi)}
+.steps b{display:block}.steps span{color:var(--mut);font-size:15px}
+form{display:grid;gap:14px;align-content:start}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select{width:100%;min-height:52px;padding:12px 14px;border-radius:var(--r);border:1px solid var(--field-ln);background:var(--field);color:var(--ink);font:400 16px var(--bf)}
+.two{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.ok{display:none;border:2px solid var(--br);border-radius:var(--r);padding:14px;font-weight:600}.ok.show{display:block}
+.contacts{display:grid;gap:24px}
+dl{display:grid;gap:18px;align-content:start}
+dt{font-size:13px;font-weight:700;color:var(--mut)}
+dd{font-size:19px;font-weight:600}
+dd a{display:inline-block;padding:4px 0;color:var(--link);text-decoration:none;font:800 32px var(--hf)}
+iframe{width:100%;height:340px;border:0;border-radius:var(--r);background:var(--card)}
+footer{border-top:1px solid var(--ln);padding:24px 0 48px;color:var(--mut);font-size:13px}
+@media(min-width:860px){.contacts{grid-template-columns:1fr 1.4fr}}
+@media(max-width:430px){.two{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-size:17px}
+.logo{font:900 clamp(22px,6vw,30px)/1 var(--hf);text-transform:uppercase;letter-spacing:.06em;color:var(--br);text-decoration:none;white-space:nowrap}
+.hero{display:grid;background:#fff}
+.hero>img{width:100%;aspect-ratio:4/3;object-fit:cover;max-height:420px}
+.hero .text{padding:26px 16px 32px}
+.hero h1{font-size:clamp(33px,10.4vw,72px);font-weight:900;text-transform:uppercase;margin-bottom:14px}
+.hero h1 span{color:var(--br);display:block}
+.hero p{max-width:44ch;color:var(--mut);font-size:18px;margin-bottom:22px}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+@media(min-width:860px){.hero{grid-template-columns:1fr 1fr;min-height:560px}.hero>img{order:2;height:100%;max-height:none;aspect-ratio:auto}.hero .text{align-self:center;padding:48px 40px 48px max(16px,calc(50vw - 560px))}.hero h1{font-size:clamp(46px,4.4vw,62px)}}
+.band{background:#17181a;color:#fff;border-top:8px solid var(--br)}
+.band .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.band .wrap div{padding:18px 4px;text-align:center;font-size:14px;line-height:1.35;color:#d5d7da}
+.band strong{display:block;font:900 clamp(24px,7vw,36px)/1.1 var(--hf);color:#fff}
+h2{text-transform:uppercase}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+@media(min-width:860px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{border-top:4px solid var(--br);border-radius:0}
+.card h3{font-size:25px;font-weight:800;text-transform:uppercase}
+.alt{background:#ecece8}
+.book{display:grid;gap:28px;align-items:start}
+.book form{background:#fff;border:1px solid var(--ln);border-top:8px solid var(--br);border-radius:0;padding:20px}
+.how .steps{gap:18px;margin-bottom:24px}
+.photo{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r)}
+@media(min-width:860px){.book{grid-template-columns:1fr 1fr;gap:48px}}
+@media(max-width:359px){.logo{font-size:19px}.btn.small{padding:8px 10px}}
+</style>
+</head>
 <body>
-<div class="demo" role="note">Демо-версія від V Web Studio — не офіційний сайт</div>
-<div class="wrap"><header class="top"><a class="logo" href="#top" id="top">Шинний центр</a>
-</header></div>
-<main>
-<section class="hero split"><svg class="deco" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44"/><circle cx="50" cy="50" r="27"/><circle cx="50" cy="50" r="7"/><path d="M50 7v20M50 73v20M7 50h20M73 50h20M20 20l14 14M66 66l14 14M80 20L66 34M34 66L20 80"/></svg>
-<div class="wrap"><div>
-
-<div class="eyebrow">Шини та шиномонтаж · Черкаси</div>
-<h1>Шини й шиномонтаж: запис без дзвінка</h1><p class="sub">Оберіть послугу та час. На готовому сайті заявка може приходити власнику в Telegram, а прайс буде в зручній таблиці.</p>
-<div class="cta"><a class="btn" href="#book" data-go="book">Записатися</a><a class="btn sec" href="#book" data-go="cb">Передзвоніть мені</a><a class="btn alt" href="tel:+380674788997">Зателефонувати · 067 478 8997</a></div></div>
-<div class="facts ">
-<div class="fact"><b>Google</b><span class="stars">★ 4,6</span> · 371 відгук у Google</div>
-<div class="fact"><b>Адреса</b>вул. Олени Теліги, 2, Черкаси</div>
-<div class="fact"><b>Години роботи</b>Пн–Пт: 09:00–18:00<br>Сб: 09:00–13:00<br>Нд: зачинено</div></div></div></section>
-<section id="services" class="alt"><div class="wrap"><h2>Послуги та ціни</h2><p class="note">ПРИКЛАД оформлення — послуги й ціни підставимо ваші.</p><div class="rows"><div class="row"><div><h3>Підбір шин</h3><p>За розміром авто</p></div><div class="price">000 грн<br><span class="ph">ПРИКЛАД</span></div></div><div class="row"><div><h3>Заміна коліс</h3><p>Монтаж і балансування</p></div><div class="price">000 грн<br><span class="ph">ПРИКЛАД</span></div></div><div class="row"><div><h3>Балансування</h3><p>Усі радіуси</p></div><div class="price">000 грн<br><span class="ph">ПРИКЛАД</span></div></div><div class="row"><div><h3>Ремонт проколу</h3><p>Швидкий ремонт</p></div><div class="price">000 грн<br><span class="ph">ПРИКЛАД</span></div></div></div></div></section>
-<section id="photos"><div class="wrap"><h2>Фото</h2><p class="note"></p><div class="photos"><div class="photo">Місце під фото [ПОТРІБНО ВІД КЛІЄНТА]</div><div class="photo">Місце під фото [ПОТРІБНО ВІД КЛІЄНТА]</div><div class="photo">Місце під фото [ПОТРІБНО ВІД КЛІЄНТА]</div><div class="photo">Місце під фото [ПОТРІБНО ВІД КЛІЄНТА]</div></div></div></section>
-<section id="book" class="alt"><div class="wrap"><h2>Запис онлайн, без дзвінка</h2>
-<div class="tabs" role="group"><button type="button" data-mode="bk" aria-pressed="true">Записатися</button><button type="button" data-mode="cb" aria-pressed="false">Передзвоніть мені</button></div>
-<form data-mode="bk" novalidate>
-<label>Ім’я<input name="name" autocomplete="name" required></label>
-<label>Телефон<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="067 478 8997"></label>
-<div class="bk-only">
-<label>Радіус коліс<select name="radius"><option>R13</option><option>R14</option><option>R15</option><option>R16</option><option>R17</option><option>R18</option><option>R19</option><option>R20</option></select></label>
-<div class="two"><label>Бажана дата<input type="date" name="date"></label><label>Година<input type="time" name="time"></label></div>
-<label>Коментар (за бажанням)<textarea name="note" rows="2"></textarea></label></div>
-<button class="btn" type="submit" data-bk="Надіслати заявку"><span class="sendtxt">Надіслати заявку</span></button>
-<div class="ok" role="status">Це демо: так виглядало б підтвердження. На готовому сайті заявка прийде власнику в Telegram.</div></form></div></section>
-<section id="contacts"><div class="wrap"><h2>Контакти та як нас знайти</h2><div class="cont"><dl>
-<div><dt>Телефон</dt><dd><a href="tel:+380674788997">067 478 8997</a></dd></div>
-<div><dt>Адреса</dt><dd>вул. Олени Теліги, 2, Черкаси</dd></div>
-<div><dt>Години роботи <span class="ph">за даними Google Карт</span></dt><dd>Пн–Пт: 09:00–18:00<br>Сб: 09:00–13:00<br>Нд: зачинено</dd></div>
-<div><a class="btn alt" href="https://www.google.com/maps/dir/?api=1&destination=%D0%A8%D0%B8%D0%BD%D0%BD%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%2C%20%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9E%D0%BB%D0%B5%D0%BD%D0%B8%20%D0%A2%D0%B5%D0%BB%D1%96%D0%B3%D0%B8%202%2C%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8" target="_blank" rel="noopener">Прокласти маршрут</a></div></dl>
-<iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%D0%A8%D0%B8%D0%BD%D0%BD%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%2C%20%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9E%D0%BB%D0%B5%D0%BD%D0%B8%20%D0%A2%D0%B5%D0%BB%D1%96%D0%B3%D0%B8%202%2C%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8&output=embed"></iframe></div></div></section></main>
-<footer><div class="wrap">Це демонстраційний приклад сайту від V Web Studio. Не офіційний сайт компанії. Назва, телефон, адреса та години взяті з публічного профілю в Google Картах.</div></footer>
-<div class="bar"><a class="btn alt" href="tel:+380674788997">Зателефонувати</a><a class="btn" href="#book" data-go="book">Записатися</a></div>
+<div class="demo" role="note">Демо-версія від V Web Studio — не офіційний сайт · фото для прикладу</div>
+<header><div class="wrap">
+ <a class="logo" href="#top">Шинний центр</a>
+ <a class="btn small" href="tel:+380674788997"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Подзвонити</a>
+</div></header>
+<main id="top">
+<div class="hero">
+ <img src="https://images.unsplash.com/photo-1675034743372-672c3c3f8377?auto=format&amp;fit=crop&amp;w=1100&amp;q=65" alt="Шиномонтажна майстерня з дисками й шинами (фото для прикладу)" fetchpriority="high">
+ <div class="text">
+  <h1>Шини, диски, шиномонтаж <span>на Олени Теліги, 2</span></h1>
+  <p>Черкаси. Залиште заявку з радіусом коліс і не чекайте на лінії.</p>
+  <div class="cta">
+   <a class="btn" href="#book">Записатися</a>
+   <a class="btn ghost" href="tel:+380674788997">067 478 8997</a>
+  </div>
+ </div>
+</div>
+<div class="band"><div class="wrap">
+ <div><strong>★ 4,6</strong>371 відгук у Google</div>
+ <div><strong>9–18</strong>понеділок–п’ятниця</div>
+ <div><strong>9–13</strong>субота</div>
+</div></div>
+<section id="services"><div class="wrap">
+ <h2>Що є в центрі</h2>
+ <p class="lead">Перелік складений за вашими вивісками. Описи й ціни уточнимо з вами.</p>
+ <div class="grid">
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1664263763412-e22fb3c8af93?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Руки в рукавицях тримають колесо (фото для прикладу)"><div><h3>Шиномонтаж</h3><p>Монтаж і встановлення коліс.</p></div></article>
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1645420526410-66448b1ee37c?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Шини, складені стосами (фото для прикладу)"><div><h3>Зберігання шин</h3><p>Сезонне зберігання вашого комплекту.</p></div></article>
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Стоси автомобільних шин (фото для прикладу)"><div><h3>Шини</h3><p>Підбір під розмір вашого авто.</p></div></article>
+  <article class="card"><img loading="lazy" width="600" height="375" src="https://images.unsplash.com/photo-1614689304159-273632ab5c5a?auto=format&amp;fit=crop&amp;w=700&amp;h=440&amp;q=65" alt="Литий диск на колесі (фото для прикладу)"><div><h3>Диски</h3><p>Підбір під ваше авто.</p></div></article>
+ </div>
+</div></section>
+<section class="alt" id="book"><div class="wrap book">
+ <div class="how">
+  <h2>Як записатися</h2>
+  <p class="lead">Три кроки.</p>
+  <ol class="steps">
+   <li><div><b>Залиште заявку</b><span>Ім’я, телефон і що треба зробити.</span></div></li>
+   <li><div><b>Отримайте дзвінок</b><span>Вам передзвонять і підтвердять час.</span></div></li>
+   <li><div><b>Приїжджайте</b><span>вул. Олени Теліги, 2.</span></div></li>
+  </ol>
+  <img class="photo" loading="lazy" src="https://images.unsplash.com/photo-1571335746824-742511d49bce?auto=format&amp;fit=crop&amp;w=900&amp;q=65" alt="Протектор шин зблизька (фото для прикладу)">
+ </div>
+ <form novalidate>
+  <div><h2>Запис онлайн</h2><p class="lead" style="margin:0">Досить імені й телефону.</p></div>
+  <label>Ім’я<input name="name" autocomplete="name" required></label>
+   <label>Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required></label>
+   <label>Що потрібно<select name="service"><option>Шиномонтаж</option><option>Зберігання шин</option><option>Шини</option><option>Диски</option></select></label>
+   <div class="two">
+    <label>Радіус коліс<select name="radius"><option>Не знаю</option><option>R13</option><option>R14</option><option>R15</option><option>R16</option><option>R17</option><option>R18</option><option>R19</option><option>R20+</option></select></label>
+    <label>Коли приїдете<select name="when"><option>Якнайшвидше</option><option>Сьогодні</option><option>Завтра</option><option>Інший день</option></select></label>
+   </div>
+   <button class="btn" type="submit">Передзвоніть мені</button>
+   <div class="ok" role="status">Дякуємо! Це демо, тому заявка нікуди не надсилається.</div>
+ </form>
+</div></section>
+<section class="alt" id="contacts"><div class="wrap">
+ <h2 style="margin-bottom:24px">Як нас знайти</h2>
+ <div class="contacts">
+  <dl>
+   <div><dt>Телефон</dt><dd><a href="tel:+380674788997">067 478 8997</a></dd></div>
+   <div><dt>Адреса</dt><dd>вул. Олени Теліги, 2, Черкаси</dd></div>
+   <div><dt>Години роботи</dt><dd>Пн–Пт: 09:00–18:00<br>Сб: 09:00–13:00<br>Нд: зачинено</dd></div>
+   <div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=%D0%A8%D0%B8%D0%BD%D0%BD%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%2C%20%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9E%D0%BB%D0%B5%D0%BD%D0%B8%20%D0%A2%D0%B5%D0%BB%D1%96%D0%B3%D0%B8%202%2C%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8">Прокласти маршрут</a></div>
+  </dl>
+  <iframe title="Карта: вул. Олени Теліги, 2, Черкаси" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%D0%A8%D0%B8%D0%BD%D0%BD%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%2C%20%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F%20%D0%9E%D0%BB%D0%B5%D0%BD%D0%B8%20%D0%A2%D0%B5%D0%BB%D1%96%D0%B3%D0%B8%202%2C%20%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8&amp;output=embed"></iframe>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">Демонстраційний приклад сайту від V Web Studio, не офіційний сайт компанії. Назва, телефон, адреса, години, оцінка та кількість відгуків взяті з профілю в Google Картах, перелік послуг — з вивісок на фото там само. Фото з Unsplash, для прикладу.</div></footer>
 <script>
-(function(){var d=document,h=d.documentElement,main='uk';
-function setLang(l){h.dataset.lang=l;h.lang=l;d.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.l===l)});
-d.querySelectorAll('[data-m]').forEach(function(e){var t=l==='uk'?e.dataset.u:e.dataset.m;if(e.tagName==='OPTION')e.textContent=t;else e.setAttribute('placeholder',t)})}
-d.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
-var f=d.querySelector('form'),ok=d.querySelector('.ok');
-function mode(m){f.dataset.mode=m;d.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.mode===m)});
-f.querySelector('.sendtxt').innerHTML=m==='cb'?"Чекаю на дзвінок":"Надіслати заявку";ok.classList.remove('show')}
-d.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){mode(b.dataset.mode)}});
-d.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(){mode(a.dataset.go)})});
-var dt=f.querySelector('[type=date]');if(dt)dt.min=new Date().toISOString().slice(0,10);
-f.addEventListener('submit',function(e){e.preventDefault();var n=f.elements['name'].value.trim(),p=f.elements['phone'].value.trim();
-if(!n||p.replace(/\D/g,'').length<7){(n?f.elements['phone']:f.elements['name']).focus();return}ok.classList.add('show')});
-})();
-</script></body></html>
+(function(){var f=document.querySelector('form'),ok=f.querySelector('.ok');
+f.addEventListener('submit',function(e){e.preventDefault();
+var n=f.elements['name'],p=f.elements['phone'];
+if(!n.value.trim()){n.focus();return}
+if(p.value.replace(/\D/g,'').length<9){p.focus();return}
+ok.classList.add('show')})})();
+</script>
+</body>
+</html>
